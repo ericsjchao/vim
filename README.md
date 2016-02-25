@@ -14,3 +14,8 @@ $ git clone https://github.com/ericsjchao/vim.git ~/.vim/vimrcs
 ```bash
 $ mv ~/.vim/vimrcs/vimrc ~/.vimrc
 ```
+
+4. 安装插件:
+```bash
+$ vim +PluginInstall +qall
+```
