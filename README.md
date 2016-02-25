@@ -8,7 +8,7 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 2. 安装vimrc:
 ```bash
 $ git clone https://github.com/ericsjchao/vim.git ~/.vim/vimrcs
-```  
+```
 
 3. 设置vimrc:
 ```bash
