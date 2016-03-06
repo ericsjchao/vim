@@ -29,10 +29,13 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 "let g:syntastic_warning_symbol = '?'
 
 "" YouCompleteMe configure
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 if has("win32")
-    let g:ycm_global_ycm_extra_conf = '~/.vim_runtime/sources_non_forked/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+    "" Youdao
+    vnoremap <silent> <C-T> <Esc>:Ydv<CR>
+    nnoremap <silent> <C-T> <Esc>:Ydc<CR>
+    noremap <leader>yd :Yde<CR>
 else
-    let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
     let g:ycm_python_binary_path = '/usr/bin/python'
     let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 endif
@@ -61,6 +64,7 @@ if has("win32") && has("gui_running")
     set guioptions-=r
     set guioptions-=b
     set showtabline=0
+    map <F11> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 endif
 
 "" airline 
