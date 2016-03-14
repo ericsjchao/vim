@@ -73,7 +73,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 "" vim session
-let g:session_directory = "~/.vim/temp_dirs/session"
+let g:session_directory = "~/.vim/temp/session"
 let g:session_autoload = "no"                
 let g:session_autosave = "no"               
 let g:session_command_aliases = 1

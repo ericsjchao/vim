@@ -40,6 +40,7 @@ Plugin 'xolox/vim-session'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
+Plugin 'easymotion/vim-easymotion'
 
 " Required, plugins availabale after.
 call vundle#end()            
